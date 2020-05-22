@@ -1,5 +1,5 @@
 # SwiftUIStarter
-SwiftUI App Template for beginners with MVVM architecture
+This is an social feeds managing App Template for beginner. beginners can easily design an tabbed application with Login using this template. app is backed with SwiftUI and MVVM architecture
 
 ## Modules Included
 * LoginView - a login screen with email-password loginview and viewmodel.
