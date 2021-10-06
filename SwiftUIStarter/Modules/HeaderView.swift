@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import struct Kingfisher.KFImage
+import Kingfisher
 
 struct HeaderView : View {
     
@@ -15,22 +15,22 @@ struct HeaderView : View {
     @State var user : User = Session.shared.user
     
     var body: some View {
-            HStack {
-                KFImage(URL(string: self.user.imageURL))
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .cornerRadius(30)
-                    .aspectRatio(contentMode: .fit)
-                VStack(alignment: .leading) {
-                    Text(self.user.name)
-                        .font(Font.Avenir(weight: .black, size: 18))
-                        .foregroundColor(Color.BMBlueBlack)
-                    Text(self.user.profile_url)
-                        .font(Font.Avenir(weight: .heavy, size: 14))
-                        .foregroundColor(Color.BMBlueBlack.opacity(0.70))
-                }
-                Spacer()
-            }.padding(.vertical, 12)
+        HStack {
+            KFImage(URL(string: self.user.imageURL))
+                .resizable()
+                .frame(width: 60, height: 60)
+                .cornerRadius(30)
+                .aspectRatio(contentMode: .fit)
+            VStack(alignment: .leading) {
+                Text(self.user.name)
+                    .font(Font.Avenir(weight: .black, size: 18))
+                    .foregroundColor(Color.BMBlueBlack)
+                Text(self.user.profile_url)
+                    .font(Font.Avenir(weight: .heavy, size: 14))
+                    .foregroundColor(Color.BMBlueBlack.opacity(0.70))
+            }
+            Spacer()
+        }.padding(.vertical, 12)
     }
 }
 

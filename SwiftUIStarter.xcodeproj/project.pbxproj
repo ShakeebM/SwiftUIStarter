@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F062767270DE9560085E41F /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 9F062766270DE9560085E41F /* ObjectMapper */; };
+		9F06276A270DE9670085E41F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9F062769270DE9670085E41F /* Kingfisher */; };
 		9F23D7AB2469A3E2005EDA90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23D7702469A3DF005EDA90 /* SceneDelegate.swift */; };
 		9F23D7AD2469A3E2005EDA90 /* LoginM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23D7732469A3E0005EDA90 /* LoginM.swift */; };
 		9F23D7B02469A3E2005EDA90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F23D7762469A3E0005EDA90 /* User.swift */; };
@@ -38,13 +40,9 @@
 		9F23D7DD2469A3E2005EDA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F23D7AA2469A3E2005EDA90 /* LaunchScreen.storyboard */; };
 		9F3B89CA246D993800DA46DD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B89C9246D993700DA46DD /* DummyData.swift */; };
 		9FFD9569247789580049B907 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD9568247789580049B907 /* AboutUsView.swift */; };
-		AEDEAC2BCE0729784C777402 /* Pods_SwiftUIStarter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDADF50B836995751B90D6B /* Pods_SwiftUIStarter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B32FDC56758D09B121BD13D /* Pods-SwiftUIStarter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIStarter.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIStarter/Pods-SwiftUIStarter.release.xcconfig"; sourceTree = "<group>"; };
-		3FDADF50B836995751B90D6B /* Pods_SwiftUIStarter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIStarter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C795F0D290EAA8C68907FD5 /* Pods-SwiftUIStarter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIStarter.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIStarter/Pods-SwiftUIStarter.debug.xcconfig"; sourceTree = "<group>"; };
 		9F23D7582469A270005EDA90 /* SwiftUIStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F23D76F2469A3DF005EDA90 /* SwiftUIStarter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftUIStarter-Bridging-Header.h"; sourceTree = "<group>"; };
 		9F23D7702469A3DF005EDA90 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEDEAC2BCE0729784C777402 /* Pods_SwiftUIStarter.framework in Frameworks */,
+				9F06276A270DE9670085E41F /* Kingfisher in Frameworks */,
+				9F062767270DE9560085E41F /* ObjectMapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,8 +98,6 @@
 			children = (
 				9F23D75A2469A270005EDA90 /* SwiftUIStarter */,
 				9F23D7592469A270005EDA90 /* Products */,
-				F62F417AFA37654FCE555B4F /* Pods */,
-				A3FFDE7761A2EDCBD7C28193 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,23 +206,6 @@
 			path = UiKit;
 			sourceTree = "<group>";
 		};
-		A3FFDE7761A2EDCBD7C28193 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3FDADF50B836995751B90D6B /* Pods_SwiftUIStarter.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F62F417AFA37654FCE555B4F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5C795F0D290EAA8C68907FD5 /* Pods-SwiftUIStarter.debug.xcconfig */,
-				0B32FDC56758D09B121BD13D /* Pods-SwiftUIStarter.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,17 +213,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F23D76C2469A278005EDA90 /* Build configuration list for PBXNativeTarget "SwiftUIStarter" */;
 			buildPhases = (
-				65D1595272D449B980EA2F4F /* [CP] Check Pods Manifest.lock */,
 				9F23D7542469A270005EDA90 /* Sources */,
 				9F23D7552469A270005EDA90 /* Frameworks */,
 				9F23D7562469A270005EDA90 /* Resources */,
-				7E9A72776EB60909918D2E8E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SwiftUIStarter;
+			packageProductDependencies = (
+				9F062766270DE9560085E41F /* ObjectMapper */,
+				9F062769270DE9670085E41F /* Kingfisher */,
+			);
 			productName = SwiftUIStarter;
 			productReference = 9F23D7582469A270005EDA90 /* SwiftUIStarter.app */;
 			productType = "com.apple.product-type.application";
@@ -255,7 +237,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Buy Me a Coffee";
 				TargetAttributes = {
 					9F23D7572469A270005EDA90 = {
@@ -273,6 +255,10 @@
 				Base,
 			);
 			mainGroup = 9F23D74F2469A270005EDA90;
+			packageReferences = (
+				9F062765270DE9560085E41F /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				9F062768270DE9670085E41F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 9F23D7592469A270005EDA90 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -294,48 +280,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		65D1595272D449B980EA2F4F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftUIStarter-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7E9A72776EB60909918D2E8E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIStarter/Pods-SwiftUIStarter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIStarter/Pods-SwiftUIStarter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIStarter/Pods-SwiftUIStarter-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F23D7542469A270005EDA90 /* Sources */ = {
@@ -402,6 +346,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -426,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -462,6 +407,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -480,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -492,7 +438,6 @@
 		};
 		9F23D76D2469A278005EDA90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C795F0D290EAA8C68907FD5 /* Pods-SwiftUIStarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -518,7 +463,6 @@
 		};
 		9F23D76E2469A278005EDA90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B32FDC56758D09B121BD13D /* Pods-SwiftUIStarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -563,6 +507,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F062765270DE9560085E41F /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		9F062768270DE9670085E41F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F062766270DE9560085E41F /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F062765270DE9560085E41F /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+		9F062769270DE9670085E41F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F062768270DE9670085E41F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9F23D7502469A270005EDA90 /* Project object */;
 }

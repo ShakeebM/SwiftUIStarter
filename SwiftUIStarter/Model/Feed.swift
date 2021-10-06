@@ -7,6 +7,7 @@
 //
 
 import ObjectMapper
+import Foundation
 
 struct Feed : Identifiable {
     var id = UUID()

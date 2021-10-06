@@ -8,7 +8,7 @@
 
 import SwiftUI
 import Combine
-import struct Kingfisher.KFImage
+import Kingfisher
 
 struct FeedContent: View {
     @State var feed : Feed
@@ -41,6 +41,7 @@ struct FeedContent: View {
                     .font(Font.Avenir(weight: .book, size: 15).italic())
                     .padding(.vertical,12)
                     .padding(.horizontal, 12)
+                Spacer()
             }
             .frame(alignment: .leading)
             .cornerRadius(6)
